@@ -1,0 +1,354 @@
+:root{
+    --negro: #191919;
+    --blanco: #FFF0F5; /* LavenderBlush */
+    --coral: #f08080; /* LightCoral */
+    --violet: #ee82ee; /* Violet */
+    --pink: #ffb6c1; /* LightPink */
+    --green: #3cb371; /* MediumGreen */
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--blanco);
+}
+.cajaTxt{
+    width: 80%;
+    margin: 0% 10%;
+    background-color: var(--blanco);
+}
+h1{
+    font: normal 5em/1em "Averia Serif Libre", serif;
+    text-align: center;
+    margin: 0;
+}
+h2{
+    font: normal 3em/1.2em "Cagliostro", serif;
+    text-align: left;
+}
+h2:nth-child(2n) {
+    text-align: left;
+    color: #8b0000;
+}
+p{
+    font: normal 2em/1.3em "Belgrano", serif;
+}
+.portada{
+    height: 20vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cajaIndex{
+    width: 100%;
+    margin: 0% 0%;
+    padding: 3% 0%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--negro);
+    position: sticky;
+}
+.cajaIndex div a{
+    font: normal 2em/1.2em "Belgrano", serif;
+    color: var(--blanco);
+    text-decoration-line: none;
+}
+.cajaIndex div a:hover{
+    color: var(--negro);
+    background-color: var(--blanco);
+}
+main {
+    width: 100%;
+    margin: 2% 0%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+main p{
+    padding: 0% 5%;
+}
+main img{
+    width: 100%;
+    padding: 5%;
+    border-style: solid;
+    border-color: var(--green) var(--negro) ;
+    border-width: 20px 10px;
+    border-radius: 5% 5% 5% 5%;
+}
+#mision{
+    background-color: var(--blanco);
+    background-image: url(img/notasSerpiente.jpg);
+    background-size: 25%;
+    background-position: 100% 20%;
+    background-repeat: no-repeat;
+    background-blend-mode: difference;
+}
+#mision h2{
+    width: 70%;
+    border-style: solid;
+    border-color: var(--coral);
+    border-width: 30px 10px 0px 0px;
+}
+#mision p{
+    width: 50%;
+    margin: 0% 40% 0% 10%;
+    border-style: solid;
+    border-color: var(--coral);
+    border-width: 0px 0px 30px 0px;
+}
+#productos{
+    width: 100%;
+    border-style: solid;
+    border-color: var(--green);
+    border-width: 0px 0px 0px 50px;
+}
+#productos h2{
+    padding: 2%;
+    text-align: right;
+    color: var(--blanco);
+    background-color: var(--green);
+}
+#productos div{
+    width: 20%;
+    height: 600px;
+    float: left;
+    overflow: hidden;
+    margin: 0% 2.5%;
+}
+#productos img{
+    width: 100%;
+    border-style: solid;
+    border-color: var(--negro);
+    border-width: 10px 5px;
+}
+#equipo{
+    width: 100%;
+    clear: both;
+}
+#equipo h2{
+    margin: 2% 0%;
+    background-color: var(--pink);
+    color: var(--negro);
+    padding: 2%;
+}
+#equipo .cadaSer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#equipo .cadaSer div{
+    width: 40%;
+    margin: 2% 5%;
+    background-color: var(--negro);
+}
+#equipo .cadaSer figure{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+#equipo .cadaSer figure img{
+    width: 50%;
+}
+#equipo .cadaSer figcaption{
+    width: 100%;
+    font: normal 1.6em/1.3em "Belgrano", serif;
+    text-align: center;
+    background-color: var(--coral);
+    color: var(--blanco);
+}
+#contacto iframe{
+    width: 100%;
+}
+footer{
+    width: 100%;
+    margin: 0%;
+    background-color: var(--negro);
+    color: var(--pink);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer img{
+    width: 30%;
+}
+footer p a{
+    color: var(--pink);
+    margin: 0% 0%;
+}
+@media only screen and (max-width: 720px){
+    .cajaTxt{
+        width: 90%;
+        margin: 0% 5%;
+        background-color: var(--blanco);
+    }
+    h1{
+        font: normal 3em/1em "Averia Serif Libre", serif;
+        text-align: center;
+        margin: 0;
+    }
+    h2{
+        font: normal 2em/1.2em "Cagliostro", serif;
+        text-align: left;
+    }
+    h2:nth-child(2n) {
+        text-align: left;
+        color: #8b0000;
+    }
+    p{
+        font: normal 1em/1.3em "Belgrano", serif;
+    }
+    .portada{
+        height: 20vh;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cajaIndex{
+        width: 100%;
+        margin: 0% 0%;
+        padding: 3% 0%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: var(--negro);
+        position: sticky;
+    }
+    .cajaIndex div a{
+        font: normal 1em/1.2em "Belgrano", serif;
+        color: var(--blanco);
+        text-decoration-line: none;
+    }
+    .cajaIndex div a:hover{
+        color: var(--negro);
+        background-color: var(--blanco);
+    }
+    main {
+        width: 100%;
+        margin: 2% 0%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;    
+    }
+    main p{
+        padding: 0% 5%;
+    }
+    main img{
+        width: 100%;
+        padding: 5%;
+        border-style: solid;
+        border-color: var(--green) var(--negro) ;
+        border-width: 20px 10px;
+        border-radius: 5% 5% 5% 5%;
+    }
+    #mision{
+        background-color: var(--blanco);
+        background-image: url(img/notasSerpiente.jpg);
+        background-size: 25%;
+        background-position: 100% 20%;
+        background-repeat: no-repeat;
+        background-blend-mode: difference;
+    }
+    #mision h2{
+        width: 70%;
+        border-style: solid;
+        border-color: var(--coral);
+        border-width: 30px 10px 0px 0px;
+    }
+    #mision p{
+        width: 60%;
+        margin: 0% 30% 0% 10%;
+        border-style: solid;
+        border-color: var(--coral);
+        border-width: 0px 0px 30px 0px;
+    }
+    #productos{
+        width: 100%;
+        border-style: solid;
+        border-color: var(--green);
+        border-width: 0px 0px 0px 50px;
+    }
+    #productos h2{
+        padding: 2%;
+        text-align: right;
+        color: var(--blanco);
+        background-color: var(--green);
+    }
+    #productos div{
+        width: 20%;
+        height: 200px;
+        float: left;
+        overflow: hidden;
+        margin: 0% 2.5%;
+    }
+    #productos img{
+        width: 100%;
+        border-style: solid;
+        border-color: var(--negro);
+        border-width: 10px 5px;
+    }
+    #equipo{
+        width: 100%;
+        clear: both;
+    }
+    #equipo h2{
+        margin: 2% 0%;
+        background-color: var(--pink);
+        color: var(--negro);
+        padding: 2%;
+    }
+    #equipo .cadaSer{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #equipo .cadaSer div{
+        width: 45%;
+        margin: 2% 2.5%;
+        background-color: var(--negro);
+    }
+    #equipo .cadaSer figure{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+    }
+    #equipo .cadaSer figure img{
+        width: 50%;
+    }
+    #equipo .cadaSer figcaption{
+        width: 100%;
+        font: normal 1.4em/1.3em "Belgrano", serif;
+        text-align: center;
+        background-color: var(--coral);
+        color: var(--blanco);
+    }
+    #contacto iframe{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+        margin: 0%;
+        background-color: var(--negro);
+        color: var(--pink);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    footer img{
+        width: 30%;
+    }
+    footer p a{
+        color: var(--pink);
+        margin: 0% 0%;
+    }    
+}
